@@ -13,9 +13,6 @@ public:
 
 };
 
-int main() {
-
-	Sandbox* sandbox = new Sandbox();
-	sandbox->Run();
-	delete sandbox;
+Prismarine::Application* Prismarine::CreateApplication() {
+	return new Sandbox();
 }

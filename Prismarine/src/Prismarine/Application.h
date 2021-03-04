@@ -1,7 +1,10 @@
 #pragma once
 
+#include "Core.h"
+
 namespace Prismarine {
-	class __declspec(dllexport) Application
+
+	class PRISMARINE_API Application
 	{
 	public:
 		Application();
@@ -9,5 +12,8 @@ namespace Prismarine {
 
 		void Run();
 	};
+
+	//To be defined in CLIENT
+	Application* CreateApplication();
 
 }

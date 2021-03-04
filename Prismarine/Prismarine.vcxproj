@@ -14,6 +14,7 @@
     <ClInclude Include="src\Prismarine.h" />
     <ClInclude Include="src\Prismarine\Application.h" />
     <ClInclude Include="src\Prismarine\Core.h" />
+    <ClInclude Include="src\Prismarine\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Prismarine\Application.cpp" />
