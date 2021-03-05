@@ -27,6 +27,7 @@ project "Prismarine"
 	}
 
 	includedirs {
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
@@ -75,8 +76,7 @@ project "Sandbox"
 
 	includedirs {
 		"Prismarine/vendor/spdlog/include",
-		"Prismarine/src",
-		"Prismarine/src/Prismarine"
+		"Prismarine/src"
 	}
 
 	links{
