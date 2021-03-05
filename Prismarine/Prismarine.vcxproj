@@ -147,6 +147,10 @@
     <ClInclude Include="src\Prismarine\Application.h" />
     <ClInclude Include="src\Prismarine\Core.h" />
     <ClInclude Include="src\Prismarine\EntryPoint.h" />
+    <ClInclude Include="src\Prismarine\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Prismarine\Events\Event.h" />
+    <ClInclude Include="src\Prismarine\Events\KeyEvent.h" />
+    <ClInclude Include="src\Prismarine\Events\MouseEvent.h" />
     <ClInclude Include="src\Prismarine\Log.h" />
   </ItemGroup>
   <ItemGroup>

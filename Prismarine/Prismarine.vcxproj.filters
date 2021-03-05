@@ -4,6 +4,9 @@
     <Filter Include="Prismarine">
       <UniqueIdentifier>{DF0C2DD9-CBC4-6E26-34CC-478220A30917}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Prismarine\Events">
+      <UniqueIdentifier>{E3A755D3-4FBE-5369-9835-DF8A048B24F1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Prismarine.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Prismarine\EntryPoint.h">
       <Filter>Prismarine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Prismarine\Events\ApplicationEvent.h">
+      <Filter>Prismarine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Prismarine\Events\Event.h">
+      <Filter>Prismarine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Prismarine\Events\KeyEvent.h">
+      <Filter>Prismarine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Prismarine\Events\MouseEvent.h">
+      <Filter>Prismarine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Prismarine\Log.h">
       <Filter>Prismarine</Filter>

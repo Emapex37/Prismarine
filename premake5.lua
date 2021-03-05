@@ -75,7 +75,8 @@ project "Sandbox"
 
 	includedirs {
 		"Prismarine/vendor/spdlog/include",
-		"Prismarine/src"
+		"Prismarine/src",
+		"Prismarine/src/Prismarine"
 	}
 
 	links{
