@@ -44,7 +44,7 @@ namespace Prismarine {
 	class PRISMARINE_API KeyReleasedEvent : public KeyEvent {
 
 	public:
-		KeyReleasedEventEvent(int keycode)
+		KeyReleasedEvent(int keycode)
 			: KeyEvent(keycode) {}
 
 		std::string ToString() const override {
