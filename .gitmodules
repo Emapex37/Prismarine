@@ -1,0 +1,3 @@
+[submodule "Prismarine/vendor/spdlog"]
+	path = Prismarine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
