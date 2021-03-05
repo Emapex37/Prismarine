@@ -2,8 +2,7 @@
 
 #include "Prismarine/Core.h"
 
-#include <string>
-#include <functional>
+
 
 namespace Prismarine {
 
