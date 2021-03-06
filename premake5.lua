@@ -58,7 +58,8 @@ project "Prismarine"
 		defines{
 		
 			"PM_PLATFORM_WINDOWS",
-			"PM_BUILD_DLL"
+			"PM_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 
 		}
 
