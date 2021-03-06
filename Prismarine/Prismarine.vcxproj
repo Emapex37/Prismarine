@@ -158,6 +158,8 @@
     <ClInclude Include="src\Prismarine\Events\Event.h" />
     <ClInclude Include="src\Prismarine\Events\KeyEvent.h" />
     <ClInclude Include="src\Prismarine\Events\MouseEvent.h" />
+    <ClInclude Include="src\Prismarine\Layer.h" />
+    <ClInclude Include="src\Prismarine\LayerStack.h" />
     <ClInclude Include="src\Prismarine\Log.h" />
     <ClInclude Include="src\pmpch.h" />
     <ClInclude Include="src\Prismarine\Window.h" />
@@ -165,6 +167,8 @@
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\Prismarine\Application.cpp" />
+    <ClCompile Include="src\Prismarine\Layer.cpp" />
+    <ClCompile Include="src\Prismarine\LayerStack.cpp" />
     <ClCompile Include="src\Prismarine\Log.cpp" />
     <ClCompile Include="src\pmpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

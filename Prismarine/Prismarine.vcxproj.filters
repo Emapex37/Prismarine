@@ -37,6 +37,8 @@
     <ClInclude Include="src\pmpch.h" />
     <ClInclude Include="src\Prismarine\Window.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\Prismarine\LayerStack.h" />
+    <ClInclude Include="src\Prismarine\Layer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Prismarine\Application.cpp">
@@ -47,5 +49,7 @@
     </ClCompile>
     <ClCompile Include="src\pmpch.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
+    <ClCompile Include="src\Prismarine\LayerStack.cpp" />
+    <ClCompile Include="src\Prismarine\Layer.cpp" />
   </ItemGroup>
 </Project>
