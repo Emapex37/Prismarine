@@ -2,13 +2,14 @@
 #include "Application.h"
 
 #include "Prismarine/Events/ApplicationEvent.h"
-#include "Prismarine/Log.h"
+
+#include "GLFW/glfw3.h"
 
 namespace Prismarine {
 
 	Application::Application()
 	{
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -18,10 +19,13 @@ namespace Prismarine {
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		PM_TRACE(e);
 
-		while (true);
+		while (m_Running) {
+			
+			m_Window->OnUpdate();
+
+		}
+
 	}
 
 }

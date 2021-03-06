@@ -35,6 +35,8 @@
       <Filter>Prismarine</Filter>
     </ClInclude>
     <ClInclude Include="src\pmpch.h" />
+    <ClInclude Include="src\Prismarine\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Prismarine\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Prismarine</Filter>
     </ClCompile>
     <ClCompile Include="src\pmpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
