@@ -15,8 +15,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder
 IncludeDir = {}
 IncludeDir["GLFW"] = "Prismarine/vendor/GLFW/include"
+IncludeDir["Glad"] = "Prismarine/vendor/Glad/include"
 
 include "Prismarine/vendor/GLFW"
+include "Prismarine/vendor/Glad"
 
 
 project "Prismarine"
@@ -38,11 +40,13 @@ project "Prismarine"
 	includedirs {
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links {
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
