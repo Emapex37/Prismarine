@@ -1,5 +1,6 @@
 workspace "Prismarine"
 	architecture "x64"
+	startproject "Sandbox"
 
 	configurations{
 	
