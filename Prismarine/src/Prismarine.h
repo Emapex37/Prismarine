@@ -6,6 +6,8 @@
 #include "Prismarine/Layer.h"
 #include "Prismarine/Log.h"
 
+#include "Prismarine/ImGui/ImGuiLayer.h"
+
 // ---Entry Point-----------------------
 #include "Prismarine/EntryPoint.h"
 // -------------------------------------

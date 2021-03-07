@@ -22,6 +22,7 @@ class Sandbox : public Prismarine::Application {
 public:
 	Sandbox() {
 		PushLayer(new ExampleLayer());
+		PushOverlay(new Prismarine::ImGuiLayer());
 	}
 
 	~Sandbox() {
