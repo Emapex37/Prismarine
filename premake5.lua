@@ -18,6 +18,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Prismarine/vendor/GLFW/include"
 IncludeDir["Glad"] = "Prismarine/vendor/Glad/include"
 IncludeDir["ImGui"] = "Prismarine/vendor/imgui"
+IncludeDir["glm"] = "Prismarine/vendor/glm"
 
 include "Prismarine/vendor/GLFW"
 include "Prismarine/vendor/Glad"
@@ -38,7 +39,9 @@ project "Prismarine"
 
 	files {
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
 	}
 
 	includedirs {
@@ -46,7 +49,8 @@ project "Prismarine"
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links {
@@ -105,7 +109,8 @@ project "Sandbox"
 
 	includedirs {
 		"Prismarine/vendor/spdlog/include",
-		"Prismarine/src"
+		"Prismarine/src",
+		"%{IncludeDir.glm}"
 	}
 
 	links{

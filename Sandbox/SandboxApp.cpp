@@ -9,10 +9,10 @@ public:
 
 	void OnUpdate() override {
 
-		PM_INFO("ExampleLayer::Update");
+		//PM_INFO("ExampleLayer::Update");
 
-		if (Prismarine::Input::IsKeyPressed(PM_KEY_TAB))
-			PM_INFO("Tab pressed");
+		/*if (Prismarine::Input::IsKeyPressed(PM_KEY_TAB))
+			PM_INFO("Tab pressed");*/
 
 	}
 
