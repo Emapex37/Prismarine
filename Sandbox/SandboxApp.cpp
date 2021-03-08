@@ -8,11 +8,16 @@ public:
 		: Layer("Example") {}
 
 	void OnUpdate() override {
+
 		PM_INFO("ExampleLayer::Update");
+
+		if (Prismarine::Input::IsKeyPressed(PM_KEY_TAB))
+			PM_INFO("Tab pressed");
+
 	}
 
 	void OnEvent(Prismarine::Event& event) override {
-		PM_TRACE("{0}", event);
+		//PM_TRACE("{0}", event);
 	}
 
 };

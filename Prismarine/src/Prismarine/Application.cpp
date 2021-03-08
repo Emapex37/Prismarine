@@ -40,7 +40,7 @@ namespace Prismarine {
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
 
-		PM_CORE_TRACE("{0}", e);
+		//PM_CORE_TRACE("{0}", e);
 
 		for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
 		{
@@ -56,13 +56,11 @@ namespace Prismarine {
 
 		while (m_Running) {
 			
+			glClear(GL_COLOR_BUFFER_BIT);
 
 			for (Layer* layer : m_LayerStack)
 				layer->OnUpdate();
 
-			//Input testing
-			/*auto[x, y] = Input::GetMousePosition();
-			PM_CORE_TRACE("{0}, {1}", x, y);*/
 
 			m_Window->OnUpdate();
 

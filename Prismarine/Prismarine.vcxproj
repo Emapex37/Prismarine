@@ -162,9 +162,11 @@
     <ClInclude Include="src\Prismarine\Events\MouseEvent.h" />
     <ClInclude Include="src\Prismarine\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Prismarine\Input.h" />
+    <ClInclude Include="src\Prismarine\KeyCodes.h" />
     <ClInclude Include="src\Prismarine\Layer.h" />
     <ClInclude Include="src\Prismarine\LayerStack.h" />
     <ClInclude Include="src\Prismarine\Log.h" />
+    <ClInclude Include="src\Prismarine\MouseButtonCodes.h" />
     <ClInclude Include="src\Prismarine\Window.h" />
     <ClInclude Include="src\pmpch.h" />
   </ItemGroup>

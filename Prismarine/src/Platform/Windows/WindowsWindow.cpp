@@ -161,8 +161,6 @@ namespace Prismarine {
 		glfwPollEvents();
 		glfwSwapBuffers(m_Window);
 
-		glClear(GL_COLOR_BUFFER_BIT);
-
 	}
 
 	void WindowsWindow::SetVSync(bool enabled) {
