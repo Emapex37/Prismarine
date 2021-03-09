@@ -7,6 +7,8 @@
 #include "Prismarine/Events/Event.h"
 #include "Prismarine/Events/ApplicationEvent.h"
 
+#include "Prismarine/ImGui/ImGuiLayer.h"
+
 
 namespace Prismarine {
 
@@ -31,6 +33,7 @@ namespace Prismarine {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 

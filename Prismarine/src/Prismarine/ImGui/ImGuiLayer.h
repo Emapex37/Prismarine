@@ -15,9 +15,14 @@ namespace Prismarine {
 		ImGuiLayer();
 		~ImGuiLayer();
 
-		void OnAttach();
-		void OnDetach();
-		void OnUpdate();
+		virtual void OnAttach() override;
+		virtual void OnDetach() override;
+		virtual void OnImGuiRender() override;
+
+		virtual void Begin();
+		virtual void End();
+
+		/*void OnUpdate();
 		void OnEvent(Event& event);
 
 	private:
@@ -28,7 +33,7 @@ namespace Prismarine {
 		bool OnKeyPressedEvent(KeyPressedEvent& e);
 		bool OnKeyReleasedEvent(KeyReleasedEvent& e);
 		bool OnKeyTypedEvent(KeyTypedEvent& e);
-		bool OnWindowResizeEvent(WindowResizeEvent& e);
+		bool OnWindowResizeEvent(WindowResizeEvent& e);*/
 
 	private:
 		float m_Time = 0.0f;
